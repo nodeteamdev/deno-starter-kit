@@ -1,0 +1,10 @@
+node_modules
+coverage
+.DS_STORE
+.netbeans
+.idea
+.sonarlint
+.vscode
+.node_history
+.history
+.vscode
