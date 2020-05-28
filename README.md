@@ -1,5 +1,14 @@
-# generator-deno-starter-kit [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-deno-starter-kit
+
+![CircleCI branch](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser/master.svg?style=flat-square)
+![npm](https://img.shields.io/npm/dm/localeval.svg?style=flat-square)
+![Plugin on redmine.org](https://img.shields.io/redmine/plugin/stars/redmine_xlsx_format_issue_exporter.svg?style=flat-square)
+![onix](https://img.shields.io/badge/onix-systems-blue.svg)
+
 > This generator will help you to build your own Deno Mongodb API using TypeScript
+
+## Description
+This generator will help you to build your own Deno, TypeScript.
 
 ## Installation
 
@@ -14,6 +23,41 @@ Then generate your new project:
 
 ```bash
 yo deno-starter-kit
+```
+
+Second, install [Deno](https://deno.land/#installation)
+Homebrew (Mac)
+```bash
+brew install deno
+```
+
+## Requirements
+
+- deno >= 1
+- typescript >= 3.4
+
+## App skeleton
+```
+.
+├── components
+│   ├── books
+│   │   ├── books.controller.ts
+│   │   ├── books.module.ts
+│   │   └── books.router.ts
+│   ├── index.ts
+│   └── users
+│       ├── users.controller.ts
+│       ├── users.module.ts
+│       └── users.router.ts
+├── config
+│   └── middleware.ts
+└── server.ts
+```
+
+### Development
+To start the application in development mode, run:
+```bash
+deno run --allow-net --allow-env server.ts
 ```
 
 ## Getting To Know Yeoman
