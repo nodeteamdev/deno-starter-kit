@@ -44,11 +44,13 @@ brew install deno
 │   │   ├── books.controller.ts
 │   │   ├── books.module.ts
 │   │   └── books.router.ts
-│   ├── index.ts
-│   └── users
-│       ├── users.controller.ts
-│       ├── users.module.ts
-│       └── users.router.ts
+│   │
+│   ├── users
+│   │   ├── users.controller.ts
+│   │   ├── users.module.ts
+│   │   └── users.router.ts
+│   │
+│   └─── index.ts
 ├── config
 │   └── middleware.ts
 └── server.ts
@@ -58,6 +60,19 @@ brew install deno
 To start the application in development mode, run:
 ```bash
 deno run --allow-net --allow-env server.ts
+```
+
+### Example CRUD
+```
+curl --location --request GET 'http://localhost:4000/books'
+```
+
+```
+curl --location --request GET 'http://localhost:4000/user'
+```
+
+```
+curl --location --request GET 'http://localhost:4000/notfound'
 ```
 
 ## Getting To Know Yeoman
